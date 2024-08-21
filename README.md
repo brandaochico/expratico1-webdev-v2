@@ -1,6 +1,6 @@
 # Exercício Prático HTML - V2
 
-## Esse é uma segunda versão do Exercício Prático de HTML da cadeira de Desenvolvimento Web. Você pode checar a primeira versão [aqui] (https://github.com/brandaochico/expratico1-webdev).
+## Esse é uma segunda versão do Exercício Prático de HTML da cadeira de Desenvolvimento Web. Você pode checar a primeira versão [aqui](https://github.com/brandaochico/expratico1-webdev).
 
 O objetivo dessa versão é fazer o mesmo site com um visual mais profissional, ao invés de estilizado. As premissas são as mesmas da outra versão.
 
