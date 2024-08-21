@@ -1,0 +1,110 @@
+body{
+    background-color: rgba(35, 177, 120, 0.75);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div#main {
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 0 5px black;
+}
+
+input, select, label {
+    margin: 15px 0px;
+    padding: 5px;
+}
+
+img#logo{
+    width: 200px;
+    margin-left: 50px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    width: 100%;
+    box-shadow: 0px 1px 4px black;
+    padding: 5px;
+    margin: -10px 0px 0px -5px;
+}
+
+header h1{
+    margin-left: auto;
+    margin-right: 800px;
+}
+
+section{
+    padding: 20px;
+    border-bottom: 1px dotted black;
+}
+
+div#radio label, div#checkbox label{
+    margin: 0px;
+}
+
+div#radio input, div#checkbox input {
+    margin-left: 30px;
+}
+
+::placeholder{
+    font-family: 'Montserrat';
+}
+
+label#obs{
+    float: left;
+    justify-content: center;
+}
+
+textarea#obs {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+input#submit{
+    display: block;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(35, 177, 120);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    box-shadow: 1px 1px 3px black;
+}
+
+input#submit:hover{
+    color: white;
+    background-color: rgb(24, 24, 77);
+    transition: background-color 0.5s;
+}
+
+input#birth, .styled{
+    color: darkgrey;
+}
+
+input#birth:valid, .styled:valid{
+    color: black;
+}
+
+footer img{
+    display: block;
+    width: 200px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
