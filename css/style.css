@@ -22,6 +22,18 @@ header {
     margin: -10px 0px 0px -5px;
 }
 
+section.subtitulo{
+    box-shadow: 0 2px 5px black;
+    background-color:#0e0641;
+    color: white;
+    text-align: justify;
+    font-size: 16pt;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:20px;
+}
+
 body {
     background-color:#14c599;
 }
@@ -112,7 +124,7 @@ table#tipos td{
 button {
     padding: 25px;
     width: 200px;
-    background-color: #0e0641;
+    background-color: #14c599;
     box-shadow: 1px 1px 10px #14c599;
     color: white;
     font-weight: bolder;
@@ -121,7 +133,7 @@ button {
 }
 
 button:hover{
-    background-color: #14c599;
+    background-color: #0e0641;
     transition: background-color 0.5s;
     cursor: pointer;
 }
