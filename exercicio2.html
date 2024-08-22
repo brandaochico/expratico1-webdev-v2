@@ -50,10 +50,34 @@
             <br>
             </section>
 
-            <section>
+            <section class="block">
             <label for="birth">Data de Nascimento: </label>
             <input id="birth" type="date" required>
             <br>
+
+            <aside>
+                <p id="age">Idade: </p>
+            </aside>
+
+            <script>
+                function calcAge(){
+                    const userDate = new Date(document.getElementById("birth").value);
+                    const curDate = new Date();
+
+                    let age = curDate.getFullYear() - userDate.getFullYear();
+
+                    const userMonth = userDate.getMonth(), userDay = userDate.getDay();
+                    const curMonth = curDate.getMonth(), curDay = curDate.getDay();
+
+                    if(curMonth < userMonth || (curMonth === userMonth && curDay < userDay)){
+                        age--;
+                    }
+
+                    document.getElementById("age").textContent = 'Idade: $age anos.'
+                }
+
+
+            </script>
             </section>
 
             <section>
