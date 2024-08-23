@@ -23,7 +23,7 @@ function checkAge(){
     if (userAge < 16 || userAge > 69) {
         checkboxes.forEach(checkbox =>{
             checkbox.disabled = true;
-        })
+        });
 
         document.getElementById("warning").textContent = "A idade selecionada não permite você ser doador de sangue."
         document.getElementById("warning").style.display = "block";
@@ -31,5 +31,8 @@ function checkAge(){
 
     else{
         document.getElementById("warning").style.display = "none";
+        checkboxes.forEach(checkbox =>{
+            checkbox.disabled = false;
+        });
     }
 }
