@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/forms.css">
         <title>Dados de Informações do Doador</title>
+        <script src="/scripts/forms.js"></script>
     </head>
 
     <body>
@@ -52,32 +53,12 @@
 
             <section class="block">
             <label for="birth">Data de Nascimento: </label>
-            <input id="birth" type="date" required>
+            <input id="birth" type="date" required onchange="calcAge();checkAge()">
             <br>
 
             <aside>
                 <p id="age">Idade: </p>
             </aside>
-
-            <script>
-                function calcAge(){
-                    const userDate = new Date(document.getElementById("birth").value);
-                    const curDate = new Date();
-
-                    let age = curDate.getFullYear() - userDate.getFullYear();
-
-                    const userMonth = userDate.getMonth(), userDay = userDate.getDay();
-                    const curMonth = curDate.getMonth(), curDay = curDate.getDay();
-
-                    if(curMonth < userMonth || (curMonth === userMonth && curDay < userDay)){
-                        age--;
-                    }
-
-                    document.getElementById("age").textContent = 'Idade: $age anos.'
-                }
-
-
-            </script>
             </section>
 
             <section>
@@ -147,6 +128,7 @@
                 <input type="checkbox" id="fever" value="fever">
                 <label for="fever">Não está com febre no dia da doação.</label>
             </div>
+            <p id="warning"></p>
             </section>
 
             <section>

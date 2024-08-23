@@ -59,7 +59,7 @@ div#radio input, div#checkbox input {
 }
 
 ::placeholder{
-    font-family: 'Montserrat';
+    font-family: 'Times New Roman', Times, serif;
 }
 
 label#obs{
@@ -107,4 +107,23 @@ footer img{
     background-color: white;
     margin-left: auto;
     margin-right: auto;
+}
+
+section.block{
+    display: flex;
+    align-items: center;
+}
+
+section.block p#age{
+    margin-left: 100px;
+}
+
+p#warning {
+    font-weight: bolder;
+    color: white;
+    background-color: #14c599;
+    text-align: center;
+    box-shadow: 0px 1px 4px black;
+    padding: 15px;
+    display: none;
 }
