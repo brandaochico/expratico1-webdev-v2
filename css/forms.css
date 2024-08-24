@@ -115,7 +115,7 @@ section.block{
 }
 
 section.block p#age{
-    margin-left: 100px;
+    margin-left: 155px;
 }
 
 p#warning {
@@ -126,4 +126,9 @@ p#warning {
     box-shadow: 0px 1px 4px black;
     padding: 15px;
     display: none;
+}
+
+section.double {
+    display: flex;
+    justify-content: space-between;
 }

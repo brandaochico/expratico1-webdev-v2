@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/forms.css">
         <title>Dados de Informações do Doador</title>
-        <script src="/scripts/forms.js"></script>
+        <script src="scripts/forms.js"></script>
     </head>
 
     <body>
@@ -15,17 +15,17 @@
                 </a>
             </header>
         <form action="action.php">
-            <section>
-            <label for="name">Nome: </label>
-            <input id="name" type="text" placeholder="João">
-            <br>
-            </section>
-
-            <section>
-                <label for="name">Sobrenome: </label>
+            <section class="double">
+            <div>
+                <label for="name">Nome: </label>
+                <input id="name" type="text" placeholder="João">
+            </div>
+          
+            <div class="side">
+                <label for="surname">Sobrenome: </label>
                 <input id="surname" type="text" placeholder="Silva">
-                <br>
-                </section>
+            </div>
+            </section>
 
             <section>
             <label for="username">Usuário: </label>
@@ -61,22 +61,22 @@
             </aside>
             </section>
 
-            <section>
-            <label for="weight">Peso (em kg):</label>
-            <input id="weight" type="number" placeholder="60">
-            <br>
-            </section>
-
-            <section>
-            <label for="bloodtype">Tipo Sanguíneo: </label>
-            <select id="bloodtype" class="styled" required>
-                <option value="" disabled selected hidden>Selecione uma opção</option>
-                <option value="O">O</option>
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="AB">AB</option>
-            </select>
-            <br>
+            <section class="double">
+            <div>
+                <label for="weight">Peso (em kg):</label>
+                <input id="weight" type="number" placeholder="60">
+            </div>
+        
+            <div class="side">
+                <label for="bloodtype">Tipo Sanguíneo: </label>
+                <select id="bloodtype" class="styled" required>
+                    <option value="" disabled selected hidden>Selecione uma opção</option>
+                    <option value="O">O</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                </select>
+            </div>
             </section>
 
             <section>
