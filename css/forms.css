@@ -3,7 +3,7 @@ body{
     font-family: 'Times New Roman', Times, serif;
 }
 
-div#main {
+#main {
     width: 750px;
     margin-left: auto;
     margin-right: auto;
