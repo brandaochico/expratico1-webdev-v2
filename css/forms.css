@@ -1,6 +1,7 @@
 body{
     background-color: rgba(35, 177, 120, 0.75);
     font-family: 'Times New Roman', Times, serif;
+    background-image: url("/assets/BackgroundTexture.webp");
 }
 
 #main {
